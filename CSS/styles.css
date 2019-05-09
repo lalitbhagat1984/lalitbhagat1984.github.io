@@ -1,0 +1,74 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+body {
+    margin: 0px;
+    font-family: 'Roboto',SansSerif;
+}
+.main-nav {
+    display: flex;
+    background: black;
+    color: white;
+    justify-content:space-between;
+    align-items: center;
+    padding: 5px;
+}
+.main-nav h1 {
+    margin: 0;
+}
+.main-nav span {
+    color: orange;
+}
+
+.main-nav ul {
+    display: flex;
+    list-style-type: none;
+}
+.main-nav ul li a{
+    color: white;
+    text-decoration: none;
+    padding: 10px 28px;
+}
+.main-nav ul li a:hover{
+    background: orange;
+    border-radius: 5px;
+}
+
+.main-layout {
+    background: url("../img/financial.jpg") no-repeat scroll center;
+    background-size: cover;
+    display: flex;
+    height: 100vh;
+    color: white;
+}
+.main-layout .main-content{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0,0,0,0.4);
+}
+.main-content h1 {
+    font-size: 50px;
+    margin: 0 auto;
+}
+.main-content p {
+    font-size: 20px;
+}
+.main-content a {
+    background: orange;
+    padding: 10px 28px;
+    text-decoration: none;
+    color: white;
+    border-radius: 5px;
+}
+.main-content a:hover {
+    box-shadow: 0 0 10px darkorange;
+}
+/* ----------------- Media Queries ----------------- */
+@media (max-width: 650px) {
+    .main-nav{
+        flex-direction: column;
+    }
+}
